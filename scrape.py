@@ -1,15 +1,3 @@
-#README
-#needed:
-#getData Function
-#putDatainCSV Function
-#Variable: Timeout
-#Some kind of output/Log what the programm is doing right now and when it'll
-#fetch Data again.
-#Then I can just do the whole program like this:
-#getData() "Price right now is..." "Already passed to {Dateiname}.csv
-#Next fetch in XY Minutes @13:23"...
-#I should also consider using a VPN or a Proxy that is rotating IP adresses
-#Bet there's a plugin for that...
 from b4s import BeautifulSoup
 import requests
 import time
