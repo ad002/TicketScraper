@@ -43,11 +43,11 @@ def passData():
 def changeIP():
     #find a way to get rid of my actual IP and rotate to another
 
-
-#The real programm
-userAgent()
-getData()
-changeIP()
-passData()
-timeout(timeuntilfetch)
-print(f"Next fetch will be in {timeuntilfetch/60} minutes at {nextfetchtime}")
+def main():
+	#The real programm
+#	userAgent()
+	getData()
+#	changeIP()
+#	passData()
+#	timeout(timeuntilfetch)
+	print(f"Next fetch will be in {timeuntilfetch/60} minutes at {nextfetchtime}")
