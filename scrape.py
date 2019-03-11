@@ -1,15 +1,16 @@
-from b4s import BeautifulSoup
+from bs4 import BeautifulSoup
 import requests
 import time
 
-#15 Minutes * 60 seconds
+
+#15 Minutes * 60 seconds = 900
 timeuntilfetch=900
 #Convert the time until fetch into a set time
 #Get the Time right now and add timeuntilfetch-time to it
 #nextfetchtime=
 
 def getData():
-    page_link = 'https://www.skyscanner.de/transport/fluge/colo/spu/190713/190721/?adults=2&children=0&adultsv2=2&childrenv2=&infants=0&cabinclass=economy&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&ref=home#results'
+    html_doc = 'https://www.skyscanner.de/transport/fluge/colo/spu/190713/190721/?adults=2&children=0&adultsv2=2&childrenv2=&infants=0&cabinclass=economy&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&ref=home#results'
     #Fetch the content from URL
     page_response = requests.get(page_link, timeout = 10)
     #Parse html
@@ -17,11 +18,11 @@ def getData():
 
     #extract all html elements where price is stored
     prices= page_content.find_all(class_='CTASection__price-2bc7h price')
-    if prices is None:
-        print("Can't get any price")
-    print(f"The price is {prices} right now")
+   # if prices is None:
+   #     print("Can't get any price")
+   # print(f"The price is {prices} right now")
 
-print(prices)
+#print(prices)
 
 def userAgent():
     #Addition: User agent spoofing
@@ -37,17 +38,22 @@ def userAgent():
 
 def passData():
     #Open the csv file in "write"-mode
-
+    abc=test
     #Don't forget to close the file
 
 def changeIP():
-    #find a way to get rid of my actual IP and rotate to another
+    #This tutorial teaches how to get a free proxy and rotate troguh it 
+    https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3/
+        
+            
+     
+    
 
 def main():
 	#The real programm
 #	userAgent()
-	getData()
-#	changeIP()
+#   getData()
+	changeIP()
 #	passData()
 #	timeout(timeuntilfetch)
-	print(f"Next fetch will be in {timeuntilfetch/60} minutes at {nextfetchtime}")
+#   print(f"Next fetch will be in {timeuntilfetch/60} minutes at {nextfetchtime}")

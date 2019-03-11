@@ -12,3 +12,50 @@ Next fetch in XY Minutes @13:23"...
 
 I should also consider using a VPN or a Proxy that is rotating IP adresses
 Bet there's a plugin for that...
+
+Before starting to scrape I should get a clue on how to read a robots.txt which
+can be found for almost any site via https://anysite.com/robots.txt to see 
+whether they have a problem with your bot or not. 
+
+Following taken from https://bit.ly/2F5j9fN without any liability assumed. 
+
+1. Full access
+User-agent: *
+Disallow:
+-> All pages are crawlable 
+
+2. Block all access 
+User-agent: *
+Disallow: /
+-> no part of the site should be visited by using an automated crawler 
+and violating this could mean legal trouble.
+
+3. Partial Access
+User-agent: *
+Disallow: /folder/
+User-agent: *
+Disallow: /file.html
+-> crawling only particular sections or files allowed
+
+4. Visit time 
+Visit-time: 0400-0845
+-> hours when crawling is allowed. In this example, the site can be crawled 
+between 04:00 and 08:45 UTC. Sites do this to avoid load from 
+bots during their peak hours.
+
+5. Crawl rate limiting 
+Crawl-delay: 11
+-> can be crawled with a delay of 11 seconds.
+
+6. Request Rate 
+Request-rate: 1/10
+-> site allows crawlers to request one page every 10 seconds.
+
+ 
+GETTING A PROXY
+After some research and evaluation of whether using scrapy or whatever, I
+found a really nice tutorial getting proxies from free-proxy-list.net and rotating it
+https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3/
+
+
+
