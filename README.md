@@ -60,6 +60,25 @@ https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3
 So this tutorial also tought me something about scapring which'll be useful later on
 because we want to automate proxy change and don't enter every proxy by hand 
 as they change quite often on https://free-proxy-list.net/. I guess. 
+-> This worked fine for getting one single IP Address
+
+As I was facing some serious trouble when trying to convert this single proxy
+in a fitting format for the requests.get(proxies=proxies) method, I'll try
+something different first on
+https://codelike.pro/create-a-crawler-with-rotating-ip-proxy-in-python/
 
 
+
+More tutorials
+More general
+https://www.pythonforbeginners.com/beautifulsoup/beautifulsoup-4-python
+https://www.pythonforbeginners.com/beautifulsoup/scraping-websites-with-beautifulsoup
+
+Good tutorial
+https://www.youtube.com/watch?v=XQgXKtPSzUI
+
+Perfect example to copy
+-> Use their website and solve the problem by myself and then see how they did
+
+https://realpython.com/python-web-scraping-practical-introduction/
 
