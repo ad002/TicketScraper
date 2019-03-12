@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import time
+#Getting the functions from the other python script (hideIP.py)
+import hideIP
 
 
 #15 Minutes * 60 seconds = 900
@@ -10,14 +12,18 @@ timeuntilfetch=900
 #nextfetchtime=
 
 def getData():
-    html_doc = 'https://www.skyscanner.de/transport/fluge/colo/spu/190713/190721/?adults=2&children=0&adultsv2=2&childrenv2=&infants=0&cabinclass=economy&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&ref=home#results'
+    #html_doc = 'https://www.skyscanner.de/transport/fluge/colo/spu/190713/190721/?adults=2&children=0&adultsv2=2&childrenv2=&infants=0&cabinclass=economy&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&ref=home#results'
     #Fetch the content from URL
-    page_response = requests.get(page_link, timeout = 10)
+    #page_response = requests.get(page_link, timeout = 10)
+    
+    #To use proxies,we can just use the fetched one we used 
+    #requests.get('https://example.org', proxies=proxies)
+    
     #Parse html
-    page_content=BeautifulSoup(page_response.content, "html.parser")
+    #page_content=BeautifulSoup(page_response.content, "html.parser")
 
     #extract all html elements where price is stored
-    prices= page_content.find_all(class_='CTASection__price-2bc7h price')
+    #prices= page_content.find_all(class_='CTASection__price-2bc7h price')
    # if prices is None:
    #     print("Can't get any price")
    # print(f"The price is {prices} right now")
@@ -42,8 +48,10 @@ def passData():
     #Don't forget to close the file
 
 def changeIP():
-    #This tutorial teaches how to get a free proxy and rotate troguh it 
-    https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3/
+   #Calling the function get_proxies() I wrote in the other file to get a proxy
+    hideIP.get_proxies()
+    print(proxies)
+    
         
             
      

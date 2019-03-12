@@ -57,5 +57,9 @@ After some research and evaluation of whether using scrapy or whatever, I
 found a really nice tutorial getting proxies from free-proxy-list.net and rotating it
 https://www.scrapehero.com/how-to-rotate-proxies-and-ip-addresses-using-python-3/
 
+So this tutorial also tought me something about scapring which'll be useful later on
+because we want to automate proxy change and don't enter every proxy by hand 
+as they change quite often on https://free-proxy-list.net/. I guess. 
+
 
 
