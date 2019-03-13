@@ -82,3 +82,19 @@ Perfect example to copy
 
 https://realpython.com/python-web-scraping-practical-introduction/
 
+
+As I still can't figure out some wokring free-hands file for me I decided to 
+practice some more. Or: Follow another fucking tutorial until I make it. 
+The Tutorial is quite good tho. Object oriented and taken from here: 
+https://medium.com/the-andela-way/learn-how-to-scrape-the-web-2a7cc488e017
+
+A German one: 
+https://www.btelligent.com/blog/howto-einfaches-web-scraping-mit-python/
+
+The latest one using a Fake-Twitter-Site and also parsing it to csv
+https://hackernoon.com/building-a-web-scraper-from-start-to-finish-bb6b95388184
+ 
+
+
+
+

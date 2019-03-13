@@ -1,0 +1,41 @@
+Web Scraping Course at DataCamp 
+
+1. Setup 
+-> Definining the objective 
+-> Identifiying sources to help us do it
+
+2. Acquisition 
+-> Accessing raw data from online
+-> Parsing and extracting it 
+
+3. Processing 
+-> Exploring 
+-> Analysing
+-> Learning 
+
+This course will focus on Acquistition using scrapy via python 
+
+HTML 
+-> Hyper Text Markup Language 
+
+<html> 
+    <body>
+       <div>
+	   <p>Hello World!</p>
+	   <p>Enjoy Data Camp!</p>
+	</div>	
+	   <p>Thanks for watching!</p>
+    <body>
+</html>
+
+-> Main tag: HTML
+-> Body Tag: Body
+-> Div Tag: Section of the body
+-> P Tag: Paragraphs within the body
+					___
+-> HTML are nested within another  |–––|___
+-> Hierachie			   |    ___
+-> Tree structure		   |---|___
+
+
+
